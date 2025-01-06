@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+body {
+	font-family: "League Spartan", serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #373b53;
+	display: flex;
+	justify-content: space-between;
+}
+
+.moonAndPfp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 30%;
+}
+hr {
+	height: 100%;
+	border: none;
+	background-color: #494e6e;
+	width: 3px;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+.pcOption,
+.newHide {
+	display: none;
+}
+
+select {
+	border: none;
+}
+
+button {
+	border: none;
+	background-color: #7c5dfa;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 727px;
+}
+
+.mdi-plus {
+	background-color: #fff;
+	color: #7c5dfa;
+	border-radius: 727px;
+}
+.invoices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50vh;
+	text-align: center;
+}
+
+.invoices h2,
+.invoices p {
+	margin-top: 10%;
+	width: 70%;
+}
+
+.nothingHere {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+	.moonAndPfp {
+		width: 10%;
+	}
+	.top {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1204px) {
+    .moonAndPfp{
+        gap: 10px;
+    }
+    .app{
+        width: 100%;
+    }
+	hr {
+		width: 25px;
+		height: 3px;
+		border: #7c5dfa 1px solid;
+	}
+	nav {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	body {
+		display: flex;
+		height: 100vh;
+	}
+
+	.moonAndPfp {
+		flex-direction: column;
+		padding: 15px;
+	}
+}
